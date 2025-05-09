@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: markdown-editor
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: serve -s build
+    staticPublishPath: ./build
